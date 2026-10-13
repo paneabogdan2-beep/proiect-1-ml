@@ -15,5 +15,12 @@ Random Forest optimizat a ieșit cel mai bine (obținând un F1-score de 0.5595,
 De ce ați ales metrica principală pe care ați ales-o?
 Am ales F1-score ca metrică principală de optimizare (în loc de acuratețe) deoarece setul de date este puternic dezechilibrat (~26% clienți care pleacă). F1-score oferă o medie armonică între Precision (câte alarme de plecare au fost reale) și Recall (câți dintre clienții care au plecat au fost depistați efectiv), penalizând modelele care ignoră clasa minoritară în favoarea clasei majoritare.
 
+Am cerut agentului textul cerintei usor modificat:
 
+1. Explorați datele: dimensiune, valori lipsă, distribuția coloanei de prezis, 3 grafice cu câte o propoziție despre ce se vede.
+2. Pregătiți datele: împărțire train/test, valori lipsă, coloane text transformate în numere, scalare dacă e nevoie.
+3. Baseline: DummyClassifier sau DummyRegressor .
+4. Antrenați 3 modele regresie  logistică, Random Forest, XGBoost.
+5. Evaluați pe setul de test: la clasificare matrice de confuzie, precision, recall, F1. De ce ați ales metrica principală pe care ați ales-o?
+6. Concluzie: ce model recomandați, cât de mult bate baseline-ul și o limitare a analizei.
 
